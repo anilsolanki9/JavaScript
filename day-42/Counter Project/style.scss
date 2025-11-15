@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  // background-image: url(./bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #a9a9a9;
+
+  #section1 {
+    width: 100%;
+    height: 100%;
+    //  backdrop-filter: blur(2px);
+
+    .container {
+      width: 80%;
+      height: 100%;
+      max-width: 1300px;
+      margin: 0 auto;
+      display: flex;
+      // flex-direction: column;
+
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      #counter-box {
+        height: 200px;
+        width: 200px;
+        backdrop-filter: blur(5px);
+        border: 2px solid white;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.4rem;
+        color: white;
+        // text-shadow: 0 0 5px black;
+        background-color: rgba(31, 31, 31, 0.425);
+        box-shadow: inset 20px 20px 20px 0px rgba(255, 255, 255, 0.683), inset -20px -20px 20px 0px rgba(0, 0, 0, 0.463);
+      }
+
+      form {
+        width: 200px;
+        display: grid;
+        grid-template-columns: 2fr 1.4fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 'inc btn' 'dec btn';
+        gap: 10px;
+
+        #decrease,
+        #increase {
+          display: none;
+        }
+
+        label#inc {
+          grid-area: inc;
+          background-color: #40d76b;
+          color: white;
+          padding: 10px;
+          text-align: center;
+          border-radius: 7px;
+          font-weight: 600;
+          user-select: none;
+        }
+
+        label#dec {
+          grid-area: dec;
+          background-color: #d75240;
+          color: white;
+          padding: 10px;
+          text-align: center;
+          border-radius: 7px;
+          font-weight: 600;
+          user-select: none;
+        }
+        input#btn {
+          grid-area: btn;
+          background-color: #f1ee4d;
+          color: black;
+          border: 2px solid transparent;
+          padding: 10px;
+          text-align: center;
+          border-radius: 7px;
+          font-weight: 600;
+          transition: all 0.3s;
+          user-select: none;
+        }
+
+        input#btn:hover {
+          border: 2px solid black;
+        }
+
+        .btnClick {
+          animation: keypress 0.4s ease;
+        }
+
+        @keyframes keypress {
+          50% {
+            scale: 0.9;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  main {
+    #section1 {
+      .container {
+        flex-direction: column;
+      }
+    }
+  }
+}

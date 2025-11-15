@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #a9a9a9;
+}
+main #section1 {
+  width: 100%;
+  height: 100%;
+}
+main #section1 .container {
+  width: 80%;
+  height: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+main #section1 .container #counter-box {
+  height: 200px;
+  width: 200px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: 2px solid white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.4rem;
+  color: white;
+  background-color: rgba(31, 31, 31, 0.425);
+  box-shadow: inset 20px 20px 20px 0px rgba(255, 255, 255, 0.683), inset -20px -20px 20px 0px rgba(0, 0, 0, 0.463);
+}
+main #section1 .container form {
+  width: 200px;
+  display: grid;
+  grid-template-columns: 2fr 1.4fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "inc btn" "dec btn";
+  gap: 10px;
+}
+main #section1 .container form #decrease,
+main #section1 .container form #increase {
+  display: none;
+}
+main #section1 .container form label#inc {
+  grid-area: inc;
+  background-color: #40d76b;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 7px;
+  font-weight: 600;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+main #section1 .container form label#dec {
+  grid-area: dec;
+  background-color: #d75240;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 7px;
+  font-weight: 600;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+main #section1 .container form input#btn {
+  grid-area: btn;
+  background-color: #f1ee4d;
+  color: black;
+  border: 2px solid transparent;
+  padding: 10px;
+  text-align: center;
+  border-radius: 7px;
+  font-weight: 600;
+  transition: all 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+main #section1 .container form input#btn:hover {
+  border: 2px solid black;
+}
+main #section1 .container form .btnClick {
+  animation: keypress 0.4s ease;
+}
+@keyframes keypress {
+  50% {
+    scale: 0.9;
+  }
+}
+
+@media (max-width: 700px) {
+  main #section1 .container {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */

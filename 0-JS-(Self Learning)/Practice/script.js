@@ -150,3 +150,41 @@ Comment
 // Access property of object => dot (.) method, arrat([]) method
 // console.log(person.name); // Anil
 // console.log(person['name']); // Anil
+
+// alert("Hello WOrld")
+
+// function showMessage() {
+//   alert('Hello! This is External JavaScript');
+// }
+
+// let myVar = 5;
+
+// let username = "Anil123";
+
+// let age = 21; // variable declaration & variable initialization
+
+// let money = 2000; // Variable declaration & variable initialization with value 2000
+// money = 3050; // Reassigning variable, now value of money is 3050
+// money = 5500; // Reassigning variable, now value of money is 5500
+
+// let globalVar = "Earth";
+
+// function
+// console.log(a);
+// console.log(age);
+
+// var a;
+// let age;
+
+// a = 4;;
+// age = 21;
+
+// console.log(a);
+// console.log(age);
+
+
+
+// hoisting happens 
+
+let arr = [1, 2, 3, 4, 5];
+let 

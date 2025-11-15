@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #E7ECEF;
+  overflow: hidden;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  padding: 20px 30px;
+  border: 1.5px solid #6096BA;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  /* color: ; */
+  background-color: #A3CEF1;
+  gap: 0px;
+  filter: drop-shadow(7px 7px 10px rgba(0, 0, 0, 0.539));
+}
+
+form h1 {
+font-size: 1.4rem;
+
+}
+label {
+  padding-top: 0.7rem;
+  padding-bottom: 0.2rem;
+  font-weight: 600;
+  
+}
+form h4 {
+  padding-top: 0.2rem;
+  padding-left: 0.4rem;
+  font-weight: 400;
+  font-size: 0.8rem;
+  display: none;
+}
+
+form #inpEmail, #inpPassword, #submit {
+  padding: 10px;
+  outline: none;
+  background-color: white;
+  border: none;
+  border-radius: 7px;
+}
+
+button#submit {
+  margin-top: 1rem;
+  background-color: rgb(33, 191, 222);
+}
+
+h3 {
+  padding-top: 0.6rem;
+  font-size: 0.8rem;
+  text-align: center;
+  opacity: 0;
+}
+
+
+
+
+

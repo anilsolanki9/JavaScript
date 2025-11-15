@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Cards</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <form>
+        <h1>Enter Email & Password</h1>
+        <label for="inpEmail">Email:</label>
+        <input autocomplete="off" type="email" name="email" id="inpEmail" placeholder="Enter email" />
+        <h4 id="emailError">Email is Invalid</h4>
+        <label for="inpPassword">Password:</label>
+        <input autocomplete="off" type="password" name="password" id="inpPassword" placeholder="Enter password" />
+        <h4 id="passwordError">Password is Invalid</h4>
+        <button id="submit" type="submit">Submit</button>
+        <h3>Everything Is Correct</h3>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

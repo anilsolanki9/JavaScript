@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      #fileInp {
+        /* to hide current input field */
+        display: none;
+      }
+      #btn {
+        padding: 1rem 2rem;
+        background-color: blueviolet;
+        border-radius: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+      }
+      #btn:hover {
+        background-color: rgb(105, 33, 178);
+      }
+    </style>
+  </head>
+  <body>
+    <input type="file" name="file" id="fileInp" />
+    <div id="btn">Select a File</div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
